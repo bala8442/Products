@@ -20,8 +20,9 @@ public class Product implements Serializable {
 	private double unitPrice;
 	private int quantity;
 	private boolean active;
-	private String categoryId;
+	private String categoryId;	
 	private String supplierId;
+	private String imageUrl;
 
 	public int getId() {
 		return id;
@@ -93,6 +94,14 @@ public class Product implements Serializable {
 
 	public void setProductName(String productName) {
 		this.productName = productName;
+	}
+
+	public String getImageUrl() {
+		return imageUrl;
+	}
+
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
 	}
 
 	@Override

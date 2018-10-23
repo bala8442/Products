@@ -38,8 +38,8 @@ public class ProductResource {
 	
 	@ApiOperation("Get Product Details")
 	@GetMapping("/products/{productId}")
-	public Product getProductDetails(@PathVariable("productId") int productId){
-		return this.productService.getProductDetails(productId);
+	public Product getProductDetails(@PathVariable("productId") String productId){
+		return this.productService.getProductDetails(Integer.parseInt(productId));
 	}
 	
 	@ApiOperation("Create Product")
